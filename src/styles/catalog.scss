@@ -1,0 +1,45 @@
+.catalog {
+  overflow-x: hidden;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media (min-width: 1440px) {
+    padding-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    border: 1px solid transparent;
+    color: #969eae;
+    background-color: #eeeff2;
+    padding: 11px 14px 13px;
+    border-radius: 32px;
+    align-content: center;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in,
+      border-color 0.2s ease-in;
+
+    &_active {
+      color: #fff;
+      background-color: #0044f0;
+    }
+
+    &:hover {
+      color: #0044f0;
+      border: 1px solid #0044f0;
+    }
+    &:focus-visible {
+      outline: none;
+      color: #fff;
+      background-color: #0044f0;
+    }
+  }
+}
