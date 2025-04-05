@@ -163,5 +163,11 @@
   &__like {
     align-self: center;
     flex-shrink: 0;
+    &:active {
+      svg path {
+        fill: #0044f0;
+        stroke: none;
+      }
+    }
   }
 }

@@ -61,6 +61,12 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    &:active {
+      svg path {
+        fill: #0044f0;
+        stroke: none;
+      }
+    }
   }
 
   &__info {
